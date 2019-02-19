@@ -11,6 +11,7 @@ description : 'A rating indicates user interest in content'
 type        : 'UI Module'
 
 themes      : ['Default']
+hidden      : true
 ---
 
 <%- @partial('header', { tabs: 'module' }) %>

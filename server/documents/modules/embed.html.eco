@@ -10,6 +10,7 @@ title       : 'Embed'
 description : 'An embed displays content from other websites like YouTube videos or Google Maps'
 type        : 'UI Module'
 
+hidden      : true
 ---
 <script src="/javascript/embed.js"></script>
 

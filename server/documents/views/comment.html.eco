@@ -10,6 +10,7 @@ description : 'A comment displays user feedback to site content'
 type        : 'UI View'
 
 themes      : ['Default', 'Chubby']
+hidden      : true
 ---
 
 <%- @partial('header') %>

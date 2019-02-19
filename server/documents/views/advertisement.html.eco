@@ -9,6 +9,7 @@ title       : 'Advertisement'
 description : 'An ad displays third-party promotional content'
 type        : 'UI View'
 
+hidden      : true
 ---
 
 <%- @partial('header') %>

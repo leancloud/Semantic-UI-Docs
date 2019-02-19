@@ -8,6 +8,7 @@
       <h1 class="ui header">
         <%=@document.title %>
         <% if @document.status?: %><span class="ui red label"><%= @document.status %></span><% end %>
+        <!--
         <div class="sub header">
           <% if 'development' in @getEnvironments(): %>
           <% else: %>
@@ -24,8 +25,10 @@
           <% end %>
           <%=@document.description %>
         </div>
+        -->
       </h1>
 
+      <!--
       <div class="ui hidden divider"></div>
 
       <div class="ui right floated main menu">
@@ -57,6 +60,7 @@
           </div>
         </div>
       </div>
+      -->
 
       <% if @document.type is 'UI Module': %>
 <!--       <a href="/module.html" class="ui right floated basic right labeled icon button">
@@ -64,6 +68,7 @@
         <i class="help icon" data-title="What are Modules?" data-content="Modules are UI elements that include behaviors as part of their definition. Modules require some knowledge of Javascript to use."></i>
       </a> -->
       <% end %>
+      <!--
       <% if @document.themes? && @document.themes.length > 1: %>
       <div class="ui floating <% if @document.themes.length > 4: %>scrolling <% end %>dropdown theme basic button" data-element="<%= @document.element %>" data-type="<%= @document.elementType %>">
         <span class="text"><%= @document.themes.length %> Themes</span>
@@ -155,12 +160,15 @@
         </div>
       </div>
       <% end %>
+      -->
     </div>
+    <!--
     <div class="advertisement">
       <% unless 'development' in @getEnvironments(): %>
       <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=semanticuicom" id="_carbonads_js"></script>
       <% end %>
     </div>
+    -->
     <% if @tabs?: %>
     <% index = 0 %>
     <% tabCount = 0 %>
@@ -178,6 +186,7 @@
     <% end %>
   </div>
 </div>
+<!--
 <% if 'development' in @getEnvironments(): %>
 <% else: %>
   <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
@@ -206,3 +215,4 @@
     </div>
   </div>
 <% end %>
+-->

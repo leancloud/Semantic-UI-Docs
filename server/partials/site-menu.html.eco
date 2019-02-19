@@ -1,10 +1,10 @@
 <% introduction      = @getCollection("documents").findAll({type: $in: ['Introduction']},[{order: 1}]).toJSON() %>
 <% usage             = @getCollection("documents").findAll({type: $in: ['Usage']},[{order: 1}]).toJSON() %>
-<% uiGlobals         = @getCollection("documents").findAll({type: $in: ['UI Global']},[{title: 1}]).toJSON() %>
-<% uiElements        = @getCollection("documents").findAll({type: $in: ['UI Element']},[{title: 1}]).toJSON() %>
-<% uiCollections     = @getCollection("documents").findAll({type: $in: ['UI Collection']},[{title: 1}]).toJSON() %>
-<% uiViews           = @getCollection("documents").findAll({type: $in: ['UI View']},[{title: 1}]).toJSON() %>
-<% uiModules         = @getCollection("documents").findAll({type: $in: ['UI Module']},[{title: 1}]).toJSON() %>
+<% uiGlobals         = @getCollection("documents").findAll({type: {$in: ['UI Global']}, hidden: $ne: true},[{title: 1}]).toJSON() %>
+<% uiElements        = @getCollection("documents").findAll({type: {$in: ['UI Element']}, hidden: $ne: true},[{title: 1}]).toJSON() %>
+<% uiCollections     = @getCollection("documents").findAll({type: {$in: ['UI Collection']}, hidden: $ne: true},[{title: 1}]).toJSON() %>
+<% uiViews           = @getCollection("documents").findAll({type: {$in: ['UI View']}, hidden: $ne: true},[{title: 1}]).toJSON() %>
+<% uiModules         = @getCollection("documents").findAll({type: {$in: ['UI Module']}, hidden: $ne: true},[{title: 1}]).toJSON() %>
 <% uiBehavior        = @getCollection("documents").findAll({type: $in: ['UI Behavior']},[{title: 1}]).toJSON() %>
 
 <div class="item">
@@ -13,6 +13,7 @@
   </a>
   <a href="/"><b>UI Docs</b></a>
 </div>
+<!--
 <a class="item" href="/introduction/getting-started.html">
   <b>Getting Started</b>
 </a>
@@ -39,6 +40,7 @@
     <% end %>
   </div>
 </div>
+-->
 <div class="item">
   <div class="<%= if @document.elementType is 'global' then 'active ' %> header">Globals</div>
   <div class="menu">
@@ -104,6 +106,7 @@
   <% end %>
   </div>
 </div>
+<!--
 <div class="item">
   <div class="<%= if @document.elementType is 'behavior' then 'active ' %> header">Behaviors</div>
   <div class="menu">
@@ -117,3 +120,4 @@
     <% end %>
   </div>
 </div>
+-->

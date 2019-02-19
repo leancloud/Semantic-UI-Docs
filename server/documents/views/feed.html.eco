@@ -11,6 +11,7 @@ element     : 'feed'
 elementType : 'view'
 
 themes      : ['Default', 'Timeline']
+hidden      : true
 ---
 
 <link rel="stylesheet/less" type="text/css" href="/src/definitions/views/feed.less" />

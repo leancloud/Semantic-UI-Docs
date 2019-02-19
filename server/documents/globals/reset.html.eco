@@ -10,6 +10,8 @@ type        : 'UI Global'
 
 themes      : ['Default', 'Basic', 'Resetcss']
 
+hidden      : true
+
 ---
 <link rel="stylesheet/less" type="text/css" href="/src/definitions/globals/reset.less" />
 
