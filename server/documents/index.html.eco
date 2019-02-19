@@ -57,7 +57,7 @@ standalone : false
         <%= @getVersion() %>
       </a>
       <h1 class="ui inverted header">
-        <span class="library">
+        <span class="library font-logo">
           LeanCloud UI
         </span>
         <span class="tagline">
